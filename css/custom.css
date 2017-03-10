@@ -28,8 +28,3 @@ body {
     overflow-x: auto;
     white-space: nowrap;
 }
-
-.container-scroll > .row > .col-lg-4 {
-    display: inline-block;
-    float: none;
-}
