@@ -2,6 +2,25 @@ body {
     padding-top: 50px;
 }
 
+#row-hotact {
+    position: relative;
+}
+
+#image {
+    margin-left: 5px;
+    position: relative;
+    width: 10%;
+    float: left;
+}
+
+.container-scroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 85%;
+    float: right;
+}
+
 .navbar-toggle {
     position: relative;
     float: left;
@@ -22,9 +41,4 @@ body {
 
 .sidebar ul li {
     border-bottom: 1px solid #e7e7e7;
-}
-
-.container-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
 }

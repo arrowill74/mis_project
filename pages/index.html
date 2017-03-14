@@ -46,18 +46,18 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user dropdown-menu-right">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i>個人頁面</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>物品</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>設定</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
                     </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i>物品</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i>設定</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
+                    <!-- /.dropdown -->
                 </ul>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
@@ -117,46 +117,37 @@
     <div class="container">
         <div class="row" style="padding:0px 30px 0px 30px">
             <div class="col-xs-4">
-                <a href="./share.html"><img src="../img/index/share.svg" alt="" class="img-responsive">
+                <a href="./share.html"><img src="../img/index/share.svg" alt="分享" class="img-responsive">
                     <h4 style="text-align:center">分享</h4>
                 </a>
             </div>
             <div class="col-xs-4">
-                <a href="./resale.html"><img src="../img/index/resale.svg" alt="" class="img-responsive">
+                <a href="./resale.html"><img src="../img/index/resale.svg" alt="轉售" class="img-responsive">
                     <h4 style="text-align:center">轉售</h4>
                 </a>
             </div>
             <div class="col-xs-4">
-                <a href="./donate.html"><img src="../img/index/donate.svg" alt="" class="img-responsive">
+                <a href="./donate.html"><img src="../img/index/donate.svg" alt="捐贈" class="img-responsive">
                     <h4 style="text-align:center">捐贈</h4>
                 </a>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-xs-12">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <img src="../img/index/hotact.svg" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-10">
-                        <div class="container-scroll">
-                            <button type="button" class="btn btn-sm btn-info">迎新宿營</button>
-                            <button type="button" class="btn btn-sm btn-info">之夜</button>
-                            <button type="button" class="btn btn-sm btn-info">宿舍用品</button>
-                            <button type="button" class="btn btn-sm btn-info">計算機</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                            <button type="button" class="btn btn-sm btn-info">123</button>
-                        </div>
-                    </div>
-                </div>
+            <img id="image" src="../img/index/hotact.svg" alt="熱門分類" class="img-responsive">
+            <div class="container-scroll">
+                <button type="button" class="btn btn-sm btn-info">迎新宿營</button>
+                <button type="button" class="btn btn-sm btn-info">之夜</button>
+                <button type="button" class="btn btn-sm btn-info">宿舍用品</button>
+                <button type="button" class="btn btn-sm btn-info">計算機</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
+                <button type="button" class="btn btn-sm btn-info">123</button>
             </div>
-            <hr>
         </div>
         <hr>
         <div class="row">
@@ -246,7 +237,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <br>
-                <button type="button" class="btn btn-primary btn-sm btn-block">See more</button>
+                <button type="button" class="btn btn-primary btn-sm btn-block">更多</button>
             </div>
             <!-- ./col-xs-12 -->
         </div>
@@ -339,7 +330,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <br>
-                <button type="button" class="btn btn-primary btn-sm btn-block">See more</button>
+                <button type="button" class="btn btn-primary btn-sm btn-block">更多</button>
             </div>
             <!-- ./col-xs-12 -->
         </div>
@@ -359,6 +350,16 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#myCarousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        $("#myCarousel").swipeleft(function() {
+            $(this).carousel('next');
+        });
+    });
+    </script>
 </body>
 
 </html>
