@@ -2,6 +2,25 @@ body {
     padding-top: 50px;
 }
 
+/*item tabs*/
+.tabs{
+    text-align: center;
+    width: 100%;
+    margin:  0;
+}
+.tabs ul{
+    list-style: none;
+    padding-left: 0px;
+    background-color: #444; 
+}
+.tabs ul li{
+    display: inline-block;
+}
+
+.text-row{
+    padding:0px 30px;
+}
+
 #row-hotact {
     position: relative;
 }
