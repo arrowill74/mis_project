@@ -3,40 +3,43 @@ body {
 }
 
 .text-content {
-    margin: 30px;
+    padding: 30px;
 }
 
 #accordion .panel-title {
-    margin: auto 15px;
+    margin: 0px 15px;
     text-align: left;
 }
 
-
+.btn-orange{
+    color: #fff;
+    background-color: rgb(246,137,0);
+    border-color: rgb(226,125,47);
+}
 
 /*item tabs*/
 
 .tabs {
+    margin: auto;
     text-align: center;
     width: 100%;
-    margin: 0;
 }
 
 .tabs ul {
     list-style: none;
-    padding-left: 0px;
-    background-color: #444;
+    background-color: rgb(108,189,226);
 }
 
 .tabs ul li {
     display: inline-block;
 }
 
-.tabs > li.active > a,
-.tabs > li.active > a:hover,
-.tabs > li.active > a:focus {
-    color: #555;
+.tabs li.active > a,
+.tabs li.active > a:hover,
+.tabs li.active > a:focus {
+    color: #FFFFFF;
     cursor: default;
-    background-color: #fff;
+    background-color: rgb(30,66,85);
 }
 
 .contact-parent {
