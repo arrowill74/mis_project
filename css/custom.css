@@ -2,23 +2,67 @@ body {
     padding-top: 50px;
 }
 
+.text-content {
+    margin: 30px;
+}
+
+#accordion .panel-title {
+    margin: auto 15px;
+    text-align: left;
+}
+
+
+
 /*item tabs*/
-.tabs{
+
+.tabs {
     text-align: center;
     width: 100%;
-    margin:  0;
+    margin: 0;
 }
-.tabs ul{
+
+.tabs ul {
     list-style: none;
     padding-left: 0px;
-    background-color: #444; 
+    background-color: #444;
 }
-.tabs ul li{
+
+.tabs ul li {
     display: inline-block;
 }
 
-.text-row{
-    padding:0px 30px;
+.tabs > li.active > a,
+.tabs > li.active > a:hover,
+.tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+}
+
+.contact-parent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.contact {
+    padding: 0px;
+    text-align: center;
+}
+
+.contact>p {
+    font-size: 0.3em;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
 }
 
 #row-hotact {
