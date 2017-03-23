@@ -6,16 +6,21 @@ body {
     padding: 30px;
 }
 
+.text-content>p {
+    text-align: left;
+}
+
 #accordion .panel-title {
     margin: 0px 15px;
     text-align: left;
 }
 
-.btn-orange{
+.btn-orange {
     color: #fff;
-    background-color: rgb(246,137,0);
-    border-color: rgb(226,125,47);
+    background-color: rgb(246, 137, 0);
+    border-color: rgb(226, 125, 47);
 }
+
 
 /*item tabs*/
 
@@ -27,7 +32,7 @@ body {
 
 .tabs ul {
     list-style: none;
-    background-color: rgb(108,189,226);
+    background-color: rgb(108, 189, 226);
 }
 
 .tabs ul li {
@@ -39,7 +44,7 @@ body {
 .tabs li.active > a:focus {
     color: #FFFFFF;
     cursor: default;
-    background-color: rgb(30,66,85);
+    background-color: rgb(30, 66, 85);
 }
 
 .contact-parent {
@@ -107,4 +112,31 @@ body {
 
 .sidebar ul li {
     border-bottom: 1px solid #e7e7e7;
+}
+
+.profile {
+    margin-top: 10px;
+}
+
+.profile img {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
+    border-radius: 200px;
+}
+
+.profile p {
+    margin: 0px;
+    font-size: 3em;
+}
+
+.product-row {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.product-row img {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
 }
