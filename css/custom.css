@@ -161,6 +161,14 @@ body {
     float: right;
 }
 
+.frame {
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(202, 229, 235);
+    box-shadow: 3px 3px rgb(142, 201, 234);
+}
+
 
 /*share page*/
 
@@ -199,11 +207,6 @@ body {
     font-size: 1.5em;
 }
 
-.countdown {
-    color: black;
-    font-size: 1.5em;
-}
-
 .star {
     color: yellow;
     padding-top: 20px;
@@ -236,16 +239,18 @@ body {
 .wanted p,
 .wanted span {
     text-align: center;
+    color: black;
 }
 
-.frame {
-    margin: 5px 5px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgb(202, 229, 235);
-    box-shadow: 3px 3px rgb(142, 201, 234);
+.wanted .countdown,
+.wanted .success,
+.wanted .fail {
+    color: red;
+    font-size: 1.5em;
 }
 
+
+}
 .bid img,
 .item img,
 .wanted img {
