@@ -140,3 +140,105 @@ body {
     padding: 5px;
     box-shadow: 1px 1px gray;
 }
+
+.header {
+    background: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.catalog-scroll {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    float: right;
+}
+
+
+/*share page*/
+
+.top-spacing {
+    margin-top: 60px;
+}
+
+.content {
+    padding: 3px
+}
+
+.content .col-xs-12 {
+    padding: 3px;
+}
+
+.star {
+    color: yellow;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.stamp{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 0px;
+}
+.stamp .col-xs-6{
+    padding: 0px;
+}
+
+
+
+
+/*wanted page*/
+
+.wanted {
+    padding: 10px;
+}
+
+.wanted .col-xs-6 {
+    padding: 3px;
+}
+
+.wanted p,
+.wanted span {
+    text-align: center;
+}
+
+.frame {
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(202, 229, 235);
+    box-shadow: 3px 3px rgb(142, 201, 234);
+}
+
+.bid img,
+.item img,
+.wanted img {
+    margin: 5px auto;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.money {
+    color: red;
+    font-size: 2em;
+}
+
+.countdown {
+    color: black;
+    font-size: 2em;
+}
