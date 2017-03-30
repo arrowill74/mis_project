@@ -176,24 +176,51 @@ body {
     padding: 3px;
 }
 
+#text {
+    padding: 0px;
+}
+
+#text p {
+    line-height: 1;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.location,
+.id {
+    font-size: 0.8em;
+}
+
+.money {
+    color: red;
+    font-size: 1.5em;
+}
+
+.countdown {
+    color: black;
+    font-size: 1.5em;
+}
+
 .star {
     color: yellow;
     padding-top: 20px;
     padding-right: 30px;
     text-align: right;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
-.stamp{
+.stamp {
     margin-top: 20px;
     margin-right: 20px;
     padding: 0px;
 }
-.stamp .col-xs-6{
+
+.stamp .col-xs-6 {
     padding: 0px;
 }
-
-
 
 
 /*wanted page*/
@@ -226,19 +253,4 @@ body {
     background-color: white;
     padding: 5px;
     box-shadow: 1px 1px gray;
-}
-
-.name {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.money {
-    color: red;
-    font-size: 2em;
-}
-
-.countdown {
-    color: black;
-    font-size: 2em;
 }
