@@ -10,7 +10,9 @@ body {
     text-align: left;
 }
 
-#accordion .panel-title {
+#accordion .panel-title,
+#accordion-borrow .panel-title,
+#accordion-rent .panel-title {
     margin: 0px 15px;
     text-align: left;
 }
@@ -228,7 +230,8 @@ body {
 
 /*wanted page*/
 
-.wanted {
+.wanted,
+.comment {
     padding: 10px;
 }
 
