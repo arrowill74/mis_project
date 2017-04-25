@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../img/favicon.png">
-    <title>SRD - 我要懸賞</title>
+    <title>SRD - 商品上架</title>
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -76,7 +76,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row wantednew">
+        <div class="row goodsnew">
             <div class="col-xs-10 col-xs-offset-1">
                 <form action="/" method="post">
                     <div class="form-group">
@@ -84,7 +84,7 @@
                         <input id="name" class="form-control" placeholder="物品名稱" required="required">
                     </div>
                     <div class="date">
-                        <label>需求日期</label>
+                        <label>可用日期</label>
                         <table>
                             <tr>
                                 <th>
@@ -164,13 +164,19 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <label>出價</label>
+                        <label>商品價格</label>
                         <input id="price" class="form-control" placeholder="價格" required="required">
                     </div>
                     <div class="form-group">
-                        <label>備註</label>
+                        <label>商品敘述</label>
                         <textarea name="" id="description" class="form-control" rows="3" equired="required"></textarea>
                     </div>
+                    <p>可否買斷
+                        <input type="radio" name="buyable" value="buy" id="buy" required="required">
+                        <label for="buy">可</label>
+                        <input type="radio" name="buyable" value="unbuy" id="unbuy" required="required">
+                        <label for="unbuy">否</label>
+                    </p>
                     <button type="submit" class="btn btn-primary btn-sm btn-block">下一步，上傳照片</button>
                 </form>
             </div>
@@ -181,6 +187,16 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/calender.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#myCarousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        $("#myCarousel").swipeleft(function() {
+            $(this).carousel('next');
+        });
+    });
+    </script>
 </body>
 
 </html>
