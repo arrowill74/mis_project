@@ -14,15 +14,17 @@
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../css/calender.css" rel="stylesheet">
-    <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <!-- DataTables CSS -->
-    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-    <!-- DataTables Responsive CSS -->
-    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-    <!-- Custom Fonts -->
+    <!-- font-awesome -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- fixed-top arrow -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- fixed top arrow -->
     <a style="display:scroll;position:fixed;bottom:5px;right:5px; z-index: 10;" href="#" title="Back to Top"><img src="../img/back-to-top.png" alt="Back to Top" border="0" width="30px" height="30px" /></a>
 </head>
 
@@ -46,11 +48,13 @@
                             <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user dropdown-menu-right">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i>個人頁面</a>
+                            <li><a href="./selfPage.html"><i class="fa fa-user fa-fw"></i>個人頁面</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>物品</a>
+                            <li><a href="./goodsNew.html"><i class="fa fa-cube fa-fw"></i>商品上架</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>設定</a>
+                            <li><a href="./commentYet.html"><i class="fa fa-file-text fa-fw"></i>尚未評論</a>
+                            </li>
+                            <li><a href="./setting.html"><i class="fa fa-gear fa-fw"></i>設定</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
@@ -74,9 +78,9 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li><a href="#share">分享</a></li>
-                    <li><a href="#resale">轉售</a></li>
-                    <li><a href="#donate">捐贈</a></li>
+                    <li><a href="./share.html">分享</a></li>
+                    <li><a href="./resale.html">轉售</a></li>
+                    <li><a href="./donate.html">捐贈</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -89,7 +93,7 @@
             </div>
             <div class="col-xs-7">
                 <h3>Name</h3>
-                <button type="button" class="btn btn-outline btn-primary btn-lg">我要競標</button>
+                <button onclick="location.href='./bidNew.html'" type="button" class="btn btn-outline btn-primary btn-lg">我要競標</button>
             </div>
         </div>
         <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
@@ -109,7 +113,7 @@
                     <td>00:00:00</td>
                     <td class="center">4</td>
                     <td align="center">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
                     </td>
                 </tr>
                 <tr class="even">
@@ -118,7 +122,7 @@
                     <td>00:00:00</td>
                     <td class="center">5</td>
                     <td align="center">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
                     </td>
                 </tr>
                 <tr class="odd">
@@ -127,7 +131,7 @@
                     <td>00:00:00</td>
                     <td class="center">5.5</td>
                     <td align="center">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
                     </td>
                 </tr>
                 <tr class="even">
@@ -136,7 +140,7 @@
                     <td>00:00:00</td>
                     <td class="center">6</td>
                     <td align="center">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
+                        <button onclick="location.href='./bidAccept.html'" type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">我要撕單</button>
                     </td>
                 </tr>
             </tbody>
@@ -153,16 +157,6 @@
     <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
     <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("#myCarousel").swiperight(function() {
-            $(this).carousel('prev');
-        });
-        $("#myCarousel").swipeleft(function() {
-            $(this).carousel('next');
-        });
-    });
-    </script>
     <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable({

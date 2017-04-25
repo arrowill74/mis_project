@@ -188,6 +188,7 @@ body {
     border-radius: 5px;
     background-color: rgb(202, 229, 235);
     box-shadow: 3px 3px rgb(142, 201, 234);
+    cursor: pointer;
 }
 
 .leftalign {
@@ -233,9 +234,8 @@ body {
 }
 
 .star {
-    color: yellow;
-    padding-top: 20px;
-    padding-right: 30px;
+    color: black;
+    padding-right: 20px;
     text-align: right;
     font-size: 0.5em;
 }
@@ -288,7 +288,10 @@ body {
 
 /*goodsNew page*/
 .goodsnew,
-.wantednew {
+.wantednew,
+.setting,
+.bidNew,
+.bidAccept {
     text-align: center;
     margin-top: 20px;
 }

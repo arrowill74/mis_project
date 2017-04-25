@@ -14,9 +14,17 @@
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../css/calender.css" rel="stylesheet">
-    <!-- Custom Fonts -->
+    <!-- font-awesome -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- fixed-top arrow -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- fixed top arrow -->
     <a style="display:scroll;position:fixed;bottom:5px;right:5px; z-index: 10;" href="#" title="Back to Top"><img src="../img/back-to-top.png" alt="Back to Top" border="0" width="30px" height="30px" /></a>
 </head>
 
@@ -40,11 +48,11 @@
                             <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user dropdown-menu-right">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i>個人頁面</a>
+                            <li><a href="./selfPage.html"><i class="fa fa-user fa-fw"></i>個人頁面</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>物品</a>
+                            <li><a href="./goodsnew.html"><i class="fa fa-cube fa-fw"></i>商品上架</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-gear fa-fw"></i>設定</a>
+                            <li><a href="./setting.html"><i class="fa fa-gear fa-fw"></i>設定</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
@@ -68,9 +76,9 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    <li><a href="#share">分享</a></li>
-                    <li><a href="#resale">轉售</a></li>
-                    <li><a href="#donate">捐贈</a></li>
+                    <li><a href="./share.html">分享</a></li>
+                    <li><a href="./resale.html">轉售</a></li>
+                    <li><a href="./donate.html">捐贈</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -94,8 +102,7 @@
         </div>
         <div class="top-spacing">
             <div class="row">
-                <div class="col-xs-2"></div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 col-xs-offset-2">
                     <img src="../img/index/resale.svg" alt="轉售" class="img-responsive">
                 </div>
                 <div class="col-xs-4">
@@ -106,27 +113,23 @@
             <div class="content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="frame">
+                        <div class="frame" onclick="location.href='./goods.html'">
                             <div class="row">
                                 <div class="col-xs-4 item">
                                     <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
                                 </div>
                                 <div class="col-xs-8">
                                     <div class="row">
-                                        <div class="col-xs-6" id="text">
+                                        <div class="col-xs-7" id="text">
                                             <p class="name">Baymax</p>
                                             <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
                                             <p class="id">賣家：103306000</p>
                                             <p class="money">$1500</p>
                                         </div>
-                                        <div class="col-xs-6">
+                                        <div class="col-xs-5">
                                             <div class="row star">
                                                 <div class="col-xs-12">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <p class="rate">評價：<span>4.8</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -148,27 +151,23 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="frame">
+                        <div class="frame" onclick="location.href='./goods.html'">
                             <div class="row">
                                 <div class="col-xs-4 item">
                                     <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
                                 </div>
                                 <div class="col-xs-8">
                                     <div class="row">
-                                        <div class="col-xs-6" id="text">
+                                        <div class="col-xs-7" id="text">
                                             <p class="name">Baymax</p>
                                             <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
                                             <p class="id">賣家：103306000</p>
                                             <p class="money">$1500</p>
                                         </div>
-                                        <div class="col-xs-6">
+                                        <div class="col-xs-5">
                                             <div class="row star">
                                                 <div class="col-xs-12">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <p class="rate">評價：<span>4.8</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -190,27 +189,23 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="frame">
+                        <div class="frame" onclick="location.href='./goods.html'">
                             <div class="row">
                                 <div class="col-xs-4 item">
                                     <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
                                 </div>
                                 <div class="col-xs-8">
                                     <div class="row">
-                                        <div class="col-xs-6" id="text">
+                                        <div class="col-xs-7" id="text">
                                             <p class="name">Baymax</p>
                                             <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
                                             <p class="id">賣家：103306000</p>
                                             <p class="money">$1500</p>
                                         </div>
-                                        <div class="col-xs-6">
+                                        <div class="col-xs-5">
                                             <div class="row star">
                                                 <div class="col-xs-12">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <p class="rate">評價：<span>4.8</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -232,27 +227,175 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="frame">
+                        <div class="frame" onclick="location.href='./goods.html'">
                             <div class="row">
                                 <div class="col-xs-4 item">
                                     <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
                                 </div>
                                 <div class="col-xs-8">
                                     <div class="row">
-                                        <div class="col-xs-6" id="text">
+                                        <div class="col-xs-7" id="text">
                                             <p class="name">Baymax</p>
                                             <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
                                             <p class="id">賣家：103306000</p>
                                             <p class="money">$1500</p>
                                         </div>
-                                        <div class="col-xs-6">
+                                        <div class="col-xs-5">
                                             <div class="row star">
                                                 <div class="col-xs-12">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <p class="rate">評價：<span>4.8</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="stamp tooltip-demo">
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/share.svg" alt="分享" class="img-responsive" id="share" data-toggle="tooltip" title="分享">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/resale.svg" alt="出售" class="img-responsive" id="resale" data-toggle="tooltip" title="出售">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="frame" onclick="location.href='./goods.html'">
+                            <div class="row">
+                                <div class="col-xs-4 item">
+                                    <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-7" id="text">
+                                            <p class="name">Baymax</p>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
+                                            <p class="id">賣家：103306000</p>
+                                            <p class="money">$1500</p>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="row star">
+                                                <div class="col-xs-12">
+                                                    <p class="rate">評價：<span>4.8</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="stamp tooltip-demo">
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/share.svg" alt="分享" class="img-responsive" id="share" data-toggle="tooltip" title="分享">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/resale.svg" alt="出售" class="img-responsive" id="resale" data-toggle="tooltip" title="出售">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="frame" onclick="location.href='./goods.html'">
+                            <div class="row">
+                                <div class="col-xs-4 item">
+                                    <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-7" id="text">
+                                            <p class="name">Baymax</p>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
+                                            <p class="id">賣家：103306000</p>
+                                            <p class="money">$1500</p>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="row star">
+                                                <div class="col-xs-12">
+                                                    <p class="rate">評價：<span>4.8</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="stamp tooltip-demo">
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/share.svg" alt="分享" class="img-responsive" id="share" data-toggle="tooltip" title="分享">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/resale.svg" alt="出售" class="img-responsive" id="resale" data-toggle="tooltip" title="出售">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="frame" onclick="location.href='./goods.html'">
+                            <div class="row">
+                                <div class="col-xs-4 item">
+                                    <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-7" id="text">
+                                            <p class="name">Baymax</p>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
+                                            <p class="id">賣家：103306000</p>
+                                            <p class="money">$1500</p>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="row star">
+                                                <div class="col-xs-12">
+                                                    <p class="rate">評價：<span>4.8</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="stamp tooltip-demo">
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/share.svg" alt="分享" class="img-responsive" id="share" data-toggle="tooltip" title="分享">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <img src="../img/index/resale.svg" alt="出售" class="img-responsive" id="resale" data-toggle="tooltip" title="出售">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="frame" onclick="location.href='./goods.html'">
+                            <div class="row">
+                                <div class="col-xs-4 item">
+                                    <img src="../img/item/camera.jpg" alt="商品" class="img-responsive">
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-7" id="text">
+                                            <p class="name">Baymax</p>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>莊敬宿舍</p>
+                                            <p class="id">賣家：103306000</p>
+                                            <p class="money">$1500</p>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="row star">
+                                                <div class="col-xs-12">
+                                                    <p class="rate">評價：<span>4.8</span></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -290,16 +433,6 @@
         // popover demo
     $("[data-toggle=popover]")
         .popover()
-    </script>
-    <script>
-    $(document).ready(function() {
-        $("#myCarousel").swiperight(function() {
-            $(this).carousel('prev');
-        });
-        $("#myCarousel").swipeleft(function() {
-            $(this).carousel('next');
-        });
-    });
     </script>
 </body>
 
