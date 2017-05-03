@@ -295,3 +295,77 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
+/*commenting page*/
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: white;
+    background-color: #5cb85c;
+}
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: white;
+    background-color: #f0ad4e;
+}
+#commenting p {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+/*order page*/
+#order .frame {
+    cursor: default;
+}
+#messenge p {
+    font-size: 1em;
+    line-height: 1em;
+    text-align: left;
+}
+.messenge-box {
+    display: block;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.messenge-box p{
+    margin: 0px;
+}
+#messenge-block{
+    margin-bottom: 40px;
+}
+#messenge-block .col-xs-8 {
+    padding: 0px;
+}
+#messenge-block img {
+    background-color: white;
+    border-radius: 100px;
+}
+.recipient .col-xs-2 {
+    padding-right: 0px;
+}
+.sender .col-xs-2,
+.sender .col-xs-8 {
+    float: right;
+}
+.sender .col-xs-2 {
+    padding-left: 0px;
+}
+.sender p{
+    text-align: right;
+}
+
+#text-box{
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #aaa;
+    position: fixed;
+    bottom: 0px;
+}
